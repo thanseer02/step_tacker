@@ -1,0 +1,50 @@
+package com.antigravity.steptracker.ui.dashboard;
+
+import com.antigravity.steptracker.data.local.datastore.AppSettings;
+import com.antigravity.steptracker.domain.repository.StepRepository;
+import dagger.internal.DaggerGenerated;
+import dagger.internal.Factory;
+import dagger.internal.QualifierMetadata;
+import dagger.internal.ScopeMetadata;
+import javax.annotation.processing.Generated;
+import javax.inject.Provider;
+
+@ScopeMetadata
+@QualifierMetadata
+@DaggerGenerated
+@Generated(
+    value = "dagger.internal.codegen.ComponentProcessor",
+    comments = "https://dagger.dev"
+)
+@SuppressWarnings({
+    "unchecked",
+    "rawtypes",
+    "KotlinInternal",
+    "KotlinInternalInJava"
+})
+public final class DashboardViewModel_Factory implements Factory<DashboardViewModel> {
+  private final Provider<StepRepository> stepRepositoryProvider;
+
+  private final Provider<AppSettings> appSettingsProvider;
+
+  public DashboardViewModel_Factory(Provider<StepRepository> stepRepositoryProvider,
+      Provider<AppSettings> appSettingsProvider) {
+    this.stepRepositoryProvider = stepRepositoryProvider;
+    this.appSettingsProvider = appSettingsProvider;
+  }
+
+  @Override
+  public DashboardViewModel get() {
+    return newInstance(stepRepositoryProvider.get(), appSettingsProvider.get());
+  }
+
+  public static DashboardViewModel_Factory create(Provider<StepRepository> stepRepositoryProvider,
+      Provider<AppSettings> appSettingsProvider) {
+    return new DashboardViewModel_Factory(stepRepositoryProvider, appSettingsProvider);
+  }
+
+  public static DashboardViewModel newInstance(StepRepository stepRepository,
+      AppSettings appSettings) {
+    return new DashboardViewModel(stepRepository, appSettings);
+  }
+}
