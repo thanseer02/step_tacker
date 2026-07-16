@@ -86,7 +86,7 @@ class StepTrackingService : Service(), SensorEventListener {
 
     private fun createNotification(content: String, steps: Int): Notification {
         return NotificationCompat.Builder(this, CHANNEL_ID)
-            .setContentTitle("Step Tracker")
+            .setContentTitle(content)
             .setContentText("Today's Steps: $steps")
             .setSmallIcon(android.R.drawable.sym_def_app_icon)
             .setOngoing(true)
