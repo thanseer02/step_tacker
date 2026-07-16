@@ -18,5 +18,5 @@ import com.antigravity.steptracker.data.local.db.entity.TrackingSessionEntity
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
-    // abstract fun stepDao(): StepDao
+    abstract fun stepDao(): com.antigravity.steptracker.data.local.db.dao.StepDao
 }

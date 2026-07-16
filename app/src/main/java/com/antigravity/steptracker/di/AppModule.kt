@@ -23,4 +23,10 @@ object AppModule {
             "step_tracker_db"
         ).build()
     }
+
+    @Provides
+    @Singleton
+    fun provideStepDao(database: AppDatabase): com.antigravity.steptracker.data.local.db.dao.StepDao {
+        return database.stepDao()
+    }
 }
