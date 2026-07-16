@@ -2,8 +2,6 @@ package com.antigravity.steptracker.data.local.db.dao;
 
 import android.database.Cursor;
 import android.os.CancellationSignal;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.room.CoroutinesRoom;
 import androidx.room.EntityDeletionOrUpdateAdapter;
 import androidx.room.EntityInsertionAdapter;
@@ -26,12 +24,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.Callable;
-import javax.annotation.processing.Generated;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
 import kotlinx.coroutines.flow.Flow;
 
-@Generated("androidx.room.RoomProcessor")
 @SuppressWarnings({"unchecked", "deprecation"})
 public final class StepDao_Impl implements StepDao {
   private final RoomDatabase __db;
@@ -48,125 +44,112 @@ public final class StepDao_Impl implements StepDao {
 
   private final EntityDeletionOrUpdateAdapter<HourlyStepsEntity> __updateAdapterOfHourlyStepsEntity;
 
-  public StepDao_Impl(@NonNull final RoomDatabase __db) {
+  public StepDao_Impl(RoomDatabase __db) {
     this.__db = __db;
     this.__insertionAdapterOfDailyStepsEntity = new EntityInsertionAdapter<DailyStepsEntity>(__db) {
       @Override
-      @NonNull
-      protected String createQuery() {
+      public String createQuery() {
         return "INSERT OR REPLACE INTO `DailySteps` (`id`,`date`,`steps`,`distance`,`calories`,`walkingTime`,`goal`,`createdAt`) VALUES (nullif(?, 0),?,?,?,?,?,?,?)";
       }
 
       @Override
-      protected void bind(@NonNull final SupportSQLiteStatement statement,
-          @NonNull final DailyStepsEntity entity) {
-        statement.bindLong(1, entity.getId());
-        statement.bindLong(2, entity.getDate());
-        statement.bindLong(3, entity.getSteps());
-        statement.bindDouble(4, entity.getDistance());
-        statement.bindDouble(5, entity.getCalories());
-        statement.bindLong(6, entity.getWalkingTime());
-        statement.bindLong(7, entity.getGoal());
-        statement.bindLong(8, entity.getCreatedAt());
+      public void bind(SupportSQLiteStatement stmt, DailyStepsEntity value) {
+        stmt.bindLong(1, value.getId());
+        stmt.bindLong(2, value.getDate());
+        stmt.bindLong(3, value.getSteps());
+        stmt.bindDouble(4, value.getDistance());
+        stmt.bindDouble(5, value.getCalories());
+        stmt.bindLong(6, value.getWalkingTime());
+        stmt.bindLong(7, value.getGoal());
+        stmt.bindLong(8, value.getCreatedAt());
       }
     };
     this.__insertionAdapterOfHourlyStepsEntity = new EntityInsertionAdapter<HourlyStepsEntity>(__db) {
       @Override
-      @NonNull
-      protected String createQuery() {
+      public String createQuery() {
         return "INSERT OR REPLACE INTO `HourlySteps` (`id`,`date`,`hour`,`steps`) VALUES (nullif(?, 0),?,?,?)";
       }
 
       @Override
-      protected void bind(@NonNull final SupportSQLiteStatement statement,
-          @NonNull final HourlyStepsEntity entity) {
-        statement.bindLong(1, entity.getId());
-        statement.bindLong(2, entity.getDate());
-        statement.bindLong(3, entity.getHour());
-        statement.bindLong(4, entity.getSteps());
+      public void bind(SupportSQLiteStatement stmt, HourlyStepsEntity value) {
+        stmt.bindLong(1, value.getId());
+        stmt.bindLong(2, value.getDate());
+        stmt.bindLong(3, value.getHour());
+        stmt.bindLong(4, value.getSteps());
       }
     };
     this.__insertionAdapterOfSensorLogsEntity = new EntityInsertionAdapter<SensorLogsEntity>(__db) {
       @Override
-      @NonNull
-      protected String createQuery() {
+      public String createQuery() {
         return "INSERT OR ABORT INTO `SensorLogs` (`id`,`timestamp`,`sensorValue`,`bootId`) VALUES (nullif(?, 0),?,?,?)";
       }
 
       @Override
-      protected void bind(@NonNull final SupportSQLiteStatement statement,
-          @NonNull final SensorLogsEntity entity) {
-        statement.bindLong(1, entity.getId());
-        statement.bindLong(2, entity.getTimestamp());
-        statement.bindDouble(3, entity.getSensorValue());
-        statement.bindLong(4, entity.getBootId());
+      public void bind(SupportSQLiteStatement stmt, SensorLogsEntity value) {
+        stmt.bindLong(1, value.getId());
+        stmt.bindLong(2, value.getTimestamp());
+        stmt.bindDouble(3, value.getSensorValue());
+        stmt.bindLong(4, value.getBootId());
       }
     };
     this.__insertionAdapterOfTrackingSessionEntity = new EntityInsertionAdapter<TrackingSessionEntity>(__db) {
       @Override
-      @NonNull
-      protected String createQuery() {
+      public String createQuery() {
         return "INSERT OR ABORT INTO `TrackingSession` (`id`,`startTime`,`endTime`,`steps`,`distance`,`calories`,`duration`) VALUES (nullif(?, 0),?,?,?,?,?,?)";
       }
 
       @Override
-      protected void bind(@NonNull final SupportSQLiteStatement statement,
-          @NonNull final TrackingSessionEntity entity) {
-        statement.bindLong(1, entity.getId());
-        statement.bindLong(2, entity.getStartTime());
-        statement.bindLong(3, entity.getEndTime());
-        statement.bindLong(4, entity.getSteps());
-        statement.bindDouble(5, entity.getDistance());
-        statement.bindDouble(6, entity.getCalories());
-        statement.bindLong(7, entity.getDuration());
+      public void bind(SupportSQLiteStatement stmt, TrackingSessionEntity value) {
+        stmt.bindLong(1, value.getId());
+        stmt.bindLong(2, value.getStartTime());
+        stmt.bindLong(3, value.getEndTime());
+        stmt.bindLong(4, value.getSteps());
+        stmt.bindDouble(5, value.getDistance());
+        stmt.bindDouble(6, value.getCalories());
+        stmt.bindLong(7, value.getDuration());
       }
     };
     this.__updateAdapterOfDailyStepsEntity = new EntityDeletionOrUpdateAdapter<DailyStepsEntity>(__db) {
       @Override
-      @NonNull
-      protected String createQuery() {
+      public String createQuery() {
         return "UPDATE OR ABORT `DailySteps` SET `id` = ?,`date` = ?,`steps` = ?,`distance` = ?,`calories` = ?,`walkingTime` = ?,`goal` = ?,`createdAt` = ? WHERE `id` = ?";
       }
 
       @Override
-      protected void bind(@NonNull final SupportSQLiteStatement statement,
-          @NonNull final DailyStepsEntity entity) {
-        statement.bindLong(1, entity.getId());
-        statement.bindLong(2, entity.getDate());
-        statement.bindLong(3, entity.getSteps());
-        statement.bindDouble(4, entity.getDistance());
-        statement.bindDouble(5, entity.getCalories());
-        statement.bindLong(6, entity.getWalkingTime());
-        statement.bindLong(7, entity.getGoal());
-        statement.bindLong(8, entity.getCreatedAt());
-        statement.bindLong(9, entity.getId());
+      public void bind(SupportSQLiteStatement stmt, DailyStepsEntity value) {
+        stmt.bindLong(1, value.getId());
+        stmt.bindLong(2, value.getDate());
+        stmt.bindLong(3, value.getSteps());
+        stmt.bindDouble(4, value.getDistance());
+        stmt.bindDouble(5, value.getCalories());
+        stmt.bindLong(6, value.getWalkingTime());
+        stmt.bindLong(7, value.getGoal());
+        stmt.bindLong(8, value.getCreatedAt());
+        stmt.bindLong(9, value.getId());
       }
     };
     this.__updateAdapterOfHourlyStepsEntity = new EntityDeletionOrUpdateAdapter<HourlyStepsEntity>(__db) {
       @Override
-      @NonNull
-      protected String createQuery() {
+      public String createQuery() {
         return "UPDATE OR ABORT `HourlySteps` SET `id` = ?,`date` = ?,`hour` = ?,`steps` = ? WHERE `id` = ?";
       }
 
       @Override
-      protected void bind(@NonNull final SupportSQLiteStatement statement,
-          @NonNull final HourlyStepsEntity entity) {
-        statement.bindLong(1, entity.getId());
-        statement.bindLong(2, entity.getDate());
-        statement.bindLong(3, entity.getHour());
-        statement.bindLong(4, entity.getSteps());
-        statement.bindLong(5, entity.getId());
+      public void bind(SupportSQLiteStatement stmt, HourlyStepsEntity value) {
+        stmt.bindLong(1, value.getId());
+        stmt.bindLong(2, value.getDate());
+        stmt.bindLong(3, value.getHour());
+        stmt.bindLong(4, value.getSteps());
+        stmt.bindLong(5, value.getId());
       }
     };
   }
 
   @Override
   public Object insertDailySteps(final DailyStepsEntity dailySteps,
-      final Continuation<? super Unit> $completion) {
+      final Continuation<? super Unit> continuation) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
-      @NonNull
       public Unit call() throws Exception {
         __db.beginTransaction();
         try {
@@ -177,15 +160,14 @@ public final class StepDao_Impl implements StepDao {
           __db.endTransaction();
         }
       }
-    }, $completion);
+    }, continuation);
   }
 
   @Override
   public Object insertHourlySteps(final HourlyStepsEntity hourlySteps,
-      final Continuation<? super Unit> $completion) {
+      final Continuation<? super Unit> continuation) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
-      @NonNull
       public Unit call() throws Exception {
         __db.beginTransaction();
         try {
@@ -196,15 +178,14 @@ public final class StepDao_Impl implements StepDao {
           __db.endTransaction();
         }
       }
-    }, $completion);
+    }, continuation);
   }
 
   @Override
   public Object insertSensorLog(final SensorLogsEntity log,
-      final Continuation<? super Unit> $completion) {
+      final Continuation<? super Unit> continuation) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
-      @NonNull
       public Unit call() throws Exception {
         __db.beginTransaction();
         try {
@@ -215,15 +196,14 @@ public final class StepDao_Impl implements StepDao {
           __db.endTransaction();
         }
       }
-    }, $completion);
+    }, continuation);
   }
 
   @Override
   public Object insertTrackingSession(final TrackingSessionEntity session,
-      final Continuation<? super Unit> $completion) {
+      final Continuation<? super Unit> continuation) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
-      @NonNull
       public Unit call() throws Exception {
         __db.beginTransaction();
         try {
@@ -234,15 +214,14 @@ public final class StepDao_Impl implements StepDao {
           __db.endTransaction();
         }
       }
-    }, $completion);
+    }, continuation);
   }
 
   @Override
   public Object updateDailySteps(final DailyStepsEntity dailySteps,
-      final Continuation<? super Unit> $completion) {
+      final Continuation<? super Unit> continuation) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
-      @NonNull
       public Unit call() throws Exception {
         __db.beginTransaction();
         try {
@@ -253,15 +232,14 @@ public final class StepDao_Impl implements StepDao {
           __db.endTransaction();
         }
       }
-    }, $completion);
+    }, continuation);
   }
 
   @Override
   public Object updateHourlySteps(final HourlyStepsEntity hourlySteps,
-      final Continuation<? super Unit> $completion) {
+      final Continuation<? super Unit> continuation) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
-      @NonNull
       public Unit call() throws Exception {
         __db.beginTransaction();
         try {
@@ -272,12 +250,12 @@ public final class StepDao_Impl implements StepDao {
           __db.endTransaction();
         }
       }
-    }, $completion);
+    }, continuation);
   }
 
   @Override
   public Object getDailyStepsByDate(final long date,
-      final Continuation<? super DailyStepsEntity> $completion) {
+      final Continuation<? super DailyStepsEntity> continuation) {
     final String _sql = "SELECT * FROM DailySteps WHERE date = ? LIMIT 1";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
@@ -285,7 +263,6 @@ public final class StepDao_Impl implements StepDao {
     final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
     return CoroutinesRoom.execute(__db, false, _cancellationSignal, new Callable<DailyStepsEntity>() {
       @Override
-      @Nullable
       public DailyStepsEntity call() throws Exception {
         final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
@@ -298,7 +275,7 @@ public final class StepDao_Impl implements StepDao {
           final int _cursorIndexOfGoal = CursorUtil.getColumnIndexOrThrow(_cursor, "goal");
           final int _cursorIndexOfCreatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "createdAt");
           final DailyStepsEntity _result;
-          if (_cursor.moveToFirst()) {
+          if(_cursor.moveToFirst()) {
             final long _tmpId;
             _tmpId = _cursor.getLong(_cursorIndexOfId);
             final long _tmpDate;
@@ -325,7 +302,7 @@ public final class StepDao_Impl implements StepDao {
           _statement.release();
         }
       }
-    }, $completion);
+    }, continuation);
   }
 
   @Override
@@ -334,9 +311,8 @@ public final class StepDao_Impl implements StepDao {
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     _statement.bindLong(_argIndex, date);
-    return CoroutinesRoom.createFlow(__db, false, new String[] {"DailySteps"}, new Callable<DailyStepsEntity>() {
+    return CoroutinesRoom.createFlow(__db, false, new String[]{"DailySteps"}, new Callable<DailyStepsEntity>() {
       @Override
-      @Nullable
       public DailyStepsEntity call() throws Exception {
         final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
@@ -349,7 +325,7 @@ public final class StepDao_Impl implements StepDao {
           final int _cursorIndexOfGoal = CursorUtil.getColumnIndexOrThrow(_cursor, "goal");
           final int _cursorIndexOfCreatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "createdAt");
           final DailyStepsEntity _result;
-          if (_cursor.moveToFirst()) {
+          if(_cursor.moveToFirst()) {
             final long _tmpId;
             _tmpId = _cursor.getLong(_cursorIndexOfId);
             final long _tmpDate;
@@ -385,7 +361,7 @@ public final class StepDao_Impl implements StepDao {
 
   @Override
   public Object getHourlySteps(final long date, final int hour,
-      final Continuation<? super HourlyStepsEntity> $completion) {
+      final Continuation<? super HourlyStepsEntity> continuation) {
     final String _sql = "SELECT * FROM HourlySteps WHERE date = ? AND hour = ? LIMIT 1";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 2);
     int _argIndex = 1;
@@ -395,7 +371,6 @@ public final class StepDao_Impl implements StepDao {
     final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
     return CoroutinesRoom.execute(__db, false, _cancellationSignal, new Callable<HourlyStepsEntity>() {
       @Override
-      @Nullable
       public HourlyStepsEntity call() throws Exception {
         final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
@@ -404,7 +379,7 @@ public final class StepDao_Impl implements StepDao {
           final int _cursorIndexOfHour = CursorUtil.getColumnIndexOrThrow(_cursor, "hour");
           final int _cursorIndexOfSteps = CursorUtil.getColumnIndexOrThrow(_cursor, "steps");
           final HourlyStepsEntity _result;
-          if (_cursor.moveToFirst()) {
+          if(_cursor.moveToFirst()) {
             final long _tmpId;
             _tmpId = _cursor.getLong(_cursorIndexOfId);
             final long _tmpDate;
@@ -423,16 +398,15 @@ public final class StepDao_Impl implements StepDao {
           _statement.release();
         }
       }
-    }, $completion);
+    }, continuation);
   }
 
   @Override
   public Flow<List<DailyStepsEntity>> getAllDailyStepsFlow() {
     final String _sql = "SELECT * FROM DailySteps ORDER BY date DESC";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
-    return CoroutinesRoom.createFlow(__db, false, new String[] {"DailySteps"}, new Callable<List<DailyStepsEntity>>() {
+    return CoroutinesRoom.createFlow(__db, false, new String[]{"DailySteps"}, new Callable<List<DailyStepsEntity>>() {
       @Override
-      @NonNull
       public List<DailyStepsEntity> call() throws Exception {
         final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
@@ -445,7 +419,7 @@ public final class StepDao_Impl implements StepDao {
           final int _cursorIndexOfGoal = CursorUtil.getColumnIndexOrThrow(_cursor, "goal");
           final int _cursorIndexOfCreatedAt = CursorUtil.getColumnIndexOrThrow(_cursor, "createdAt");
           final List<DailyStepsEntity> _result = new ArrayList<DailyStepsEntity>(_cursor.getCount());
-          while (_cursor.moveToNext()) {
+          while(_cursor.moveToNext()) {
             final DailyStepsEntity _item;
             final long _tmpId;
             _tmpId = _cursor.getLong(_cursorIndexOfId);
@@ -479,7 +453,6 @@ public final class StepDao_Impl implements StepDao {
     });
   }
 
-  @NonNull
   public static List<Class<?>> getRequiredConverters() {
     return Collections.emptyList();
   }

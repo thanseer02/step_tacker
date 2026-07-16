@@ -29,7 +29,6 @@
 
         <service
             android:name=".service.StepTrackingService"
-            android:foregroundServiceType="health"
             android:exported="false" />
 
         <receiver

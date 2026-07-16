@@ -46,8 +46,7 @@
 
         <service
             android:name="com.antigravity.steptracker.service.StepTrackingService"
-            android:exported="false"
-            android:foregroundServiceType="health" />
+            android:exported="false" />
 
         <receiver
             android:name="com.antigravity.steptracker.receiver.BootReceiver"

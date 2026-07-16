@@ -77,11 +77,7 @@ class StepTrackingService : Service(), SensorEventListener {
 
     private fun startForegroundService() {
         val notification = createNotification("Tracking active", 0)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-            startForeground(NOTIFICATION_ID, notification, ServiceInfo.FOREGROUND_SERVICE_TYPE_HEALTH)
-        } else {
-            startForeground(NOTIFICATION_ID, notification)
-        }
+        startForeground(NOTIFICATION_ID, notification)
     }
 
     private fun createNotification(content: String, steps: Int): Notification {

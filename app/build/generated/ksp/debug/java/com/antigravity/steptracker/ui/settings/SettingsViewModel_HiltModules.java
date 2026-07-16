@@ -13,9 +13,7 @@ import dagger.multibindings.IntoMap;
 import dagger.multibindings.IntoSet;
 import dagger.multibindings.StringKey;
 import java.lang.String;
-import javax.annotation.processing.Generated;
 
-@Generated("dagger.hilt.android.processor.internal.viewmodel.ViewModelProcessor")
 @OriginatingElement(
     topLevelClass = SettingsViewModel.class
 )
