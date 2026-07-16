@@ -28,15 +28,15 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:extractNativeLibs="false"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@android:drawable/sym_def_app_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@android:drawable/sym_def_app_icon"
         android:supportsRtl="true"
-        android:theme="@style/Theme.StepTracker" >
+        android:theme="@android:style/Theme.Material.Light.NoActionBar" >
         <activity
             android:name="com.antigravity.steptracker.MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.StepTracker" >
+            android:theme="@android:style/Theme.Material.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

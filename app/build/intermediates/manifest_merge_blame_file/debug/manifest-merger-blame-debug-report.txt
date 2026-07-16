@@ -51,24 +51,24 @@
 28-->[androidx.core:core:1.12.0] /Users/saikrishna/.gradle/caches/transforms-3/5b1f0c9cacd504758eca7af4f6f3461d/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 29        android:debuggable="true"
 30        android:extractNativeLibs="false"
-31        android:icon="@mipmap/ic_launcher"
-31-->/Users/saikrishna/Documents/Android Native/step tracker/app/src/main/AndroidManifest.xml:14:9-43
+31        android:icon="@android:drawable/sym_def_app_icon"
+31-->/Users/saikrishna/Documents/Android Native/step tracker/app/src/main/AndroidManifest.xml:14:9-58
 32        android:label="@string/app_name"
 32-->/Users/saikrishna/Documents/Android Native/step tracker/app/src/main/AndroidManifest.xml:15:9-41
-33        android:roundIcon="@mipmap/ic_launcher_round"
-33-->/Users/saikrishna/Documents/Android Native/step tracker/app/src/main/AndroidManifest.xml:16:9-54
+33        android:roundIcon="@android:drawable/sym_def_app_icon"
+33-->/Users/saikrishna/Documents/Android Native/step tracker/app/src/main/AndroidManifest.xml:16:9-63
 34        android:supportsRtl="true"
 34-->/Users/saikrishna/Documents/Android Native/step tracker/app/src/main/AndroidManifest.xml:17:9-35
-35        android:theme="@style/Theme.StepTracker" >
-35-->/Users/saikrishna/Documents/Android Native/step tracker/app/src/main/AndroidManifest.xml:18:9-49
+35        android:theme="@android:style/Theme.Material.Light.NoActionBar" >
+35-->/Users/saikrishna/Documents/Android Native/step tracker/app/src/main/AndroidManifest.xml:18:9-72
 36        <activity
 36-->/Users/saikrishna/Documents/Android Native/step tracker/app/src/main/AndroidManifest.xml:20:9-28:20
 37            android:name="com.antigravity.steptracker.MainActivity"
 37-->/Users/saikrishna/Documents/Android Native/step tracker/app/src/main/AndroidManifest.xml:21:13-41
 38            android:exported="true"
 38-->/Users/saikrishna/Documents/Android Native/step tracker/app/src/main/AndroidManifest.xml:22:13-36
-39            android:theme="@style/Theme.StepTracker" >
-39-->/Users/saikrishna/Documents/Android Native/step tracker/app/src/main/AndroidManifest.xml:23:13-53
+39            android:theme="@android:style/Theme.Material.Light.NoActionBar" >
+39-->/Users/saikrishna/Documents/Android Native/step tracker/app/src/main/AndroidManifest.xml:23:13-76
 40            <intent-filter>
 40-->/Users/saikrishna/Documents/Android Native/step tracker/app/src/main/AndroidManifest.xml:24:13-27:29
 41                <action android:name="android.intent.action.MAIN" />
