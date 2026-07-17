@@ -1,0 +1,62 @@
+com.antigravity.steptracker.app-core-1.10.1-0 /Users/saikrishna/.gradle/caches/transforms-3/05286a37db15219e6b117ebec2b36475/transformed/core-1.10.1/res
+com.antigravity.steptracker.app-work-runtime-2.8.1-1 /Users/saikrishna/.gradle/caches/transforms-3/0fba46a121f05dae20eeeca2de006a3a/transformed/work-runtime-2.8.1/res
+com.antigravity.steptracker.app-savedstate-1.2.1-2 /Users/saikrishna/.gradle/caches/transforms-3/117bd364dec79a0ef208ab1042b1449e/transformed/savedstate-1.2.1/res
+com.antigravity.steptracker.app-ui-unit-release-3 /Users/saikrishna/.gradle/caches/transforms-3/1b0dfb49dca40c8266ff358c68b67272/transformed/ui-unit-release/res
+com.antigravity.steptracker.app-foundation-release-4 /Users/saikrishna/.gradle/caches/transforms-3/1e76e8655188b8a721cebbe108719ee9/transformed/foundation-release/res
+com.antigravity.steptracker.app-savedstate-ktx-1.2.1-5 /Users/saikrishna/.gradle/caches/transforms-3/20ea6e00ca7eac238bf5a999e9def553/transformed/savedstate-ktx-1.2.1/res
+com.antigravity.steptracker.app-navigation-common-ktx-2.6.0-6 /Users/saikrishna/.gradle/caches/transforms-3/29b27e47181419f8d8e004bb8af28452/transformed/navigation-common-ktx-2.6.0/res
+com.antigravity.steptracker.app-ui-release-7 /Users/saikrishna/.gradle/caches/transforms-3/2f518ffae52924527426a17a38dbda3a/transformed/ui-release/res
+com.antigravity.steptracker.app-ui-text-release-8 /Users/saikrishna/.gradle/caches/transforms-3/330560dea2a2f3e2c1e32ff447fbe582/transformed/ui-text-release/res
+com.antigravity.steptracker.app-activity-ktx-1.7.2-9 /Users/saikrishna/.gradle/caches/transforms-3/335c9cc7dd26fdee7c9954ccc4b410db/transformed/activity-ktx-1.7.2/res
+com.antigravity.steptracker.app-ui-graphics-release-10 /Users/saikrishna/.gradle/caches/transforms-3/359a3fd5372820eb825466a3aa936cef/transformed/ui-graphics-release/res
+com.antigravity.steptracker.app-emoji2-1.3.0-11 /Users/saikrishna/.gradle/caches/transforms-3/3baf9affd2be75d5e2d052cad3de9e1b/transformed/emoji2-1.3.0/res
+com.antigravity.steptracker.app-datastore-preferences-1.0.0-12 /Users/saikrishna/.gradle/caches/transforms-3/3ecb01c8b40e0147081fd2557c0bd468/transformed/datastore-preferences-1.0.0/res
+com.antigravity.steptracker.app-lifecycle-service-2.6.2-13 /Users/saikrishna/.gradle/caches/transforms-3/406ccb03ec7962ad632c9123d0f53c76/transformed/lifecycle-service-2.6.2/res
+com.antigravity.steptracker.app-lifecycle-viewmodel-savedstate-2.6.2-14 /Users/saikrishna/.gradle/caches/transforms-3/430862f3fb97f839daa301e42bc6126c/transformed/lifecycle-viewmodel-savedstate-2.6.2/res
+com.antigravity.steptracker.app-hilt-navigation-compose-1.0.0-15 /Users/saikrishna/.gradle/caches/transforms-3/43b78d70ebbfc297ef979cf7e9c05e58/transformed/hilt-navigation-compose-1.0.0/res
+com.antigravity.steptracker.app-animation-core-release-16 /Users/saikrishna/.gradle/caches/transforms-3/4a264dba600d84ea201b65f14225a89f/transformed/animation-core-release/res
+com.antigravity.steptracker.app-profileinstaller-1.3.0-17 /Users/saikrishna/.gradle/caches/transforms-3/4b276941c9f1fc4d082881f2cfc92998/transformed/profileinstaller-1.3.0/res
+com.antigravity.steptracker.app-material-ripple-release-18 /Users/saikrishna/.gradle/caches/transforms-3/50ccc9870942724743c5c518a134cd36/transformed/material-ripple-release/res
+com.antigravity.steptracker.app-core-ktx-1.10.1-19 /Users/saikrishna/.gradle/caches/transforms-3/52dad1ba87e5c788282e3359ee5a4169/transformed/core-ktx-1.10.1/res
+com.antigravity.steptracker.app-navigation-compose-2.6.0-20 /Users/saikrishna/.gradle/caches/transforms-3/548ada6e9becc4c45993aeaa903b6757/transformed/navigation-compose-2.6.0/res
+com.antigravity.steptracker.app-lifecycle-runtime-2.6.2-21 /Users/saikrishna/.gradle/caches/transforms-3/66ba5bd1f83d71fbfdd6f2c02fef9cf2/transformed/lifecycle-runtime-2.6.2/res
+com.antigravity.steptracker.app-lifecycle-viewmodel-compose-2.6.2-22 /Users/saikrishna/.gradle/caches/transforms-3/70687c639127a19c2130ef01dcd575d1/transformed/lifecycle-viewmodel-compose-2.6.2/res
+com.antigravity.steptracker.app-runtime-saveable-release-23 /Users/saikrishna/.gradle/caches/transforms-3/720fcd39ac9592cd7089d8a97fa83732/transformed/runtime-saveable-release/res
+com.antigravity.steptracker.app-sqlite-2.3.1-24 /Users/saikrishna/.gradle/caches/transforms-3/769db0fec6f6e12306a1ee7a08d478da/transformed/sqlite-2.3.1/res
+com.antigravity.steptracker.app-room-runtime-2.5.2-25 /Users/saikrishna/.gradle/caches/transforms-3/79008644d6ae043221d848479b6d449c/transformed/room-runtime-2.5.2/res
+com.antigravity.steptracker.app-work-runtime-ktx-2.8.1-26 /Users/saikrishna/.gradle/caches/transforms-3/80cb00507b4e819b8982776249b9954f/transformed/work-runtime-ktx-2.8.1/res
+com.antigravity.steptracker.app-lifecycle-livedata-2.6.2-27 /Users/saikrishna/.gradle/caches/transforms-3/85a71caddda476324366831a5dd7760d/transformed/lifecycle-livedata-2.6.2/res
+com.antigravity.steptracker.app-customview-poolingcontainer-1.0.0-28 /Users/saikrishna/.gradle/caches/transforms-3/890faeb37a08c0b2f403565a50da57a3/transformed/customview-poolingcontainer-1.0.0/res
+com.antigravity.steptracker.app-foundation-layout-release-29 /Users/saikrishna/.gradle/caches/transforms-3/89417dd2a5bfb5ac4b7d56f31fa164dd/transformed/foundation-layout-release/res
+com.antigravity.steptracker.app-ui-util-release-30 /Users/saikrishna/.gradle/caches/transforms-3/8b87453a636ff13fc67fb8d4366ed0d7/transformed/ui-util-release/res
+com.antigravity.steptracker.app-lifecycle-runtime-ktx-2.6.2-31 /Users/saikrishna/.gradle/caches/transforms-3/8d9664bda614a5be3063bc4ca7b972fd/transformed/lifecycle-runtime-ktx-2.6.2/res
+com.antigravity.steptracker.app-activity-1.7.2-32 /Users/saikrishna/.gradle/caches/transforms-3/90ba877b75705203d48de1b65cde56d4/transformed/activity-1.7.2/res
+com.antigravity.steptracker.app-navigation-runtime-2.6.0-33 /Users/saikrishna/.gradle/caches/transforms-3/9a799dea7480b5474918b04ca6c1326b/transformed/navigation-runtime-2.6.0/res
+com.antigravity.steptracker.app-runtime-release-34 /Users/saikrishna/.gradle/caches/transforms-3/9af976923f5c2224d7a5dc60cef94262/transformed/runtime-release/res
+com.antigravity.steptracker.app-lifecycle-viewmodel-ktx-2.6.2-35 /Users/saikrishna/.gradle/caches/transforms-3/9b52badb95f3b95e8787fb8f41344c9b/transformed/lifecycle-viewmodel-ktx-2.6.2/res
+com.antigravity.steptracker.app-annotation-experimental-1.3.1-36 /Users/saikrishna/.gradle/caches/transforms-3/a2e80184e5a9de5bc3414e168b0a724e/transformed/annotation-experimental-1.3.1/res
+com.antigravity.steptracker.app-lifecycle-viewmodel-2.6.2-37 /Users/saikrishna/.gradle/caches/transforms-3/a35e83e106d2a85311b7e01d1d2bff18/transformed/lifecycle-viewmodel-2.6.2/res
+com.antigravity.steptracker.app-lifecycle-livedata-core-2.6.2-38 /Users/saikrishna/.gradle/caches/transforms-3/ad44afbaaf58cfcfffa16a3f3f880dd4/transformed/lifecycle-livedata-core-2.6.2/res
+com.antigravity.steptracker.app-sqlite-framework-2.3.1-39 /Users/saikrishna/.gradle/caches/transforms-3/b14aafe8f7ae21a8c9dd41217b66e328/transformed/sqlite-framework-2.3.1/res
+com.antigravity.steptracker.app-hilt-navigation-1.0.0-40 /Users/saikrishna/.gradle/caches/transforms-3/bad022257b61b900f47b44aaab970faf/transformed/hilt-navigation-1.0.0/res
+com.antigravity.steptracker.app-room-ktx-2.5.2-41 /Users/saikrishna/.gradle/caches/transforms-3/bd71c85353a1cd6133cee50642a932b8/transformed/room-ktx-2.5.2/res
+com.antigravity.steptracker.app-startup-runtime-1.1.1-42 /Users/saikrishna/.gradle/caches/transforms-3/c7169fcf0633c13843d29603d22d53ee/transformed/startup-runtime-1.1.1/res
+com.antigravity.steptracker.app-activity-compose-1.7.2-43 /Users/saikrishna/.gradle/caches/transforms-3/c7ec1ef527a134091e43831ab9da0f5b/transformed/activity-compose-1.7.2/res
+com.antigravity.steptracker.app-navigation-common-2.6.0-44 /Users/saikrishna/.gradle/caches/transforms-3/cb3a31dcb58e8992d7f7a6f6e0fdac08/transformed/navigation-common-2.6.0/res
+com.antigravity.steptracker.app-hilt-work-1.0.0-45 /Users/saikrishna/.gradle/caches/transforms-3/cda42c8fd84ebdc532b6d1c18b8a6913/transformed/hilt-work-1.0.0/res
+com.antigravity.steptracker.app-material-icons-core-release-46 /Users/saikrishna/.gradle/caches/transforms-3/d2fa105cc688b9cede1693145d638ef9/transformed/material-icons-core-release/res
+com.antigravity.steptracker.app-lifecycle-process-2.6.2-47 /Users/saikrishna/.gradle/caches/transforms-3/d5a5689ce7d890af64d61906a76d7ba5/transformed/lifecycle-process-2.6.2/res
+com.antigravity.steptracker.app-datastore-1.0.0-48 /Users/saikrishna/.gradle/caches/transforms-3/d7e89abcec209578836dc4df7d8b34ba/transformed/datastore-1.0.0/res
+com.antigravity.steptracker.app-core-runtime-2.2.0-49 /Users/saikrishna/.gradle/caches/transforms-3/e11994c8a2ba152a080b319d688b1fc6/transformed/core-runtime-2.2.0/res
+com.antigravity.steptracker.app-fragment-1.5.1-50 /Users/saikrishna/.gradle/caches/transforms-3/e1cf3fcd7b137f13e3773f74825c121c/transformed/fragment-1.5.1/res
+com.antigravity.steptracker.app-ui-tooling-preview-release-51 /Users/saikrishna/.gradle/caches/transforms-3/e63845170d64fd62e305c9ef90090d0a/transformed/ui-tooling-preview-release/res
+com.antigravity.steptracker.app-ui-geometry-release-52 /Users/saikrishna/.gradle/caches/transforms-3/e72616fc51d8d610cf7c802ec1f82ba2/transformed/ui-geometry-release/res
+com.antigravity.steptracker.app-material3-1.1.1-53 /Users/saikrishna/.gradle/caches/transforms-3/ee09f0b6ebdc04f9c35b9ed623fb2c24/transformed/material3-1.1.1/res
+com.antigravity.steptracker.app-animation-release-54 /Users/saikrishna/.gradle/caches/transforms-3/f99d6c3f4136c7f4ce38ba6f0b10d1e8/transformed/animation-release/res
+com.antigravity.steptracker.app-navigation-runtime-ktx-2.6.0-55 /Users/saikrishna/.gradle/caches/transforms-3/ff02ca8e097b4681b6ebb7dea665ab80/transformed/navigation-runtime-ktx-2.6.0/res
+com.antigravity.steptracker.app-resValues-56 /Users/saikrishna/Documents/Android Native/step tracker/app/build/generated/res/resValues/release
+com.antigravity.steptracker.app-packageReleaseResources-57 /Users/saikrishna/Documents/Android Native/step tracker/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+com.antigravity.steptracker.app-packageReleaseResources-58 /Users/saikrishna/Documents/Android Native/step tracker/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+com.antigravity.steptracker.app-merged_res-59 /Users/saikrishna/Documents/Android Native/step tracker/app/build/intermediates/merged_res/release
+com.antigravity.steptracker.app-main-60 /Users/saikrishna/Documents/Android Native/step tracker/app/src/main/res
+com.antigravity.steptracker.app-release-61 /Users/saikrishna/Documents/Android Native/step tracker/app/src/release/res
