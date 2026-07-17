@@ -1,11 +1,15 @@
 package com.antigravity.steptracker;
 
 import android.content.Context;
+import android.os.Bundle;
 import androidx.activity.ComponentActivity;
 import androidx.activity.contextaware.OnContextAvailableListener;
+import androidx.annotation.CallSuper;
 import androidx.lifecycle.ViewModelProvider;
 import dagger.hilt.android.internal.lifecycle.DefaultViewModelFactories;
 import dagger.hilt.android.internal.managers.ActivityComponentManager;
+import dagger.hilt.android.internal.managers.SavedStateHandleHolder;
+import dagger.hilt.internal.GeneratedComponentManager;
 import dagger.hilt.internal.GeneratedComponentManagerHolder;
 import dagger.hilt.internal.UnsafeCasts;
 import java.lang.Object;
@@ -15,6 +19,8 @@ import java.lang.Override;
  * A generated base class to be extended by the @dagger.hilt.android.AndroidEntryPoint annotated class. If using the Gradle plugin, this is swapped as the base class via bytecode transformation.
  */
 public abstract class Hilt_MainActivity extends ComponentActivity implements GeneratedComponentManagerHolder {
+  private SavedStateHandleHolder savedStateHandleHolder;
+
   private volatile ActivityComponentManager componentManager;
 
   private final Object componentManagerLock = new Object();
@@ -38,6 +44,30 @@ public abstract class Hilt_MainActivity extends ComponentActivity implements Gen
         inject();
       }
     });
+  }
+
+  private void initSavedStateHandleHolder() {
+    if (getApplication() instanceof GeneratedComponentManager) {
+      savedStateHandleHolder = componentManager().getSavedStateHandleHolder();
+      if (savedStateHandleHolder.isInvalid()) {
+        savedStateHandleHolder.setExtras(getDefaultViewModelCreationExtras());
+      }
+    }
+  }
+
+  @CallSuper
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    initSavedStateHandleHolder();
+  }
+
+  @Override
+  protected void onDestroy() {
+    super.onDestroy();
+    if (savedStateHandleHolder != null) {
+      savedStateHandleHolder.clear();
+    }
   }
 
   @Override
